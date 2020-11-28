@@ -9,11 +9,11 @@ const Alert = props => {
 	}
     else{return (
 		<div className="alert alert-danger" role="alert">
-			This is a primary alert-check it out!
+	    		{props.text}
 		</div>
 	);
 };
-Alert.propTypes = {
+Alert.propsTypes = {
 	color: PropTypes.string,
 	text: PropTypes.string,
 	show: PropTypes.bool,
