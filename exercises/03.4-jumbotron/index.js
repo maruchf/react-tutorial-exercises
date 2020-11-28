@@ -10,7 +10,7 @@ const Jumbotron = props => {
         <hr className="my-4">
         <p>{props.description}</p>
         <p className="lead">
-        <a className="btn btn-primary btn-lg" href={props.buttonURL} role="button">{buttonLabel}</a>
+        <a className="btn btn-primary btn-lg" href={props.buttonURL} role="button">{props.buttonLabel}</a>
         </p>
     </div>)};
 
