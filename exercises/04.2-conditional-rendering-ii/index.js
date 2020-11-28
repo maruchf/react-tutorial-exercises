@@ -6,7 +6,8 @@ import PropTypes from "prop-types";
 const Alert = props => {
 	const colorClasses = {
 		red: "alert-danger",
-		orange: "alert-warning"
+		orange: "alert-warning",
+		green: "alert-success"
 	};
 	if (colorClasses[props.color] === undefined) alert(`The color ${props.color} is not in the possible list of colors`);
 
@@ -25,9 +26,9 @@ Alert.propTypes = {
 // but it helps you understan what properties is the component using
 ReactDOM.render(
 	<div>
-		<Alert text="OMG! Something really bad has happended!" color="red" />
-		<Alert text="Well, it is not that bad after all!" color="orange" />
-		<Alert text="I am supposed to be green" color="green" />
+		<Alert text="Marte es un planeta rojo" color="red" />
+		<Alert text="El Sol como todas las estrellas es una bola gigante de gas caliente" color="orange" />
+		<Alert text="Neptuno es un planeta donde hay mucho viento" color="green" />
 	</div>,
 	document.querySelector("#myDiv")
 );

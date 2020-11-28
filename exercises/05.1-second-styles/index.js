@@ -4,12 +4,14 @@ import PropTypes from "prop-types";
 
 const buttonStyles = {
 	//write button styles here
-
+	background: "black",
+	fontSize: "16px",
+	border: "1px solid yellow"
 };
 
 const badgeStyles = {
 	//write the span styles here
-
+	background: "red"
 };
 
 const Badge = props => {
